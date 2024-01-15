@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="src/index.css">
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="body">
+        <header class="header">
+            <form id="searchCity">
+                <input type="search" placeholder="Enter city ..." class="search" required id="input">
+                <input type="submit" value="Search" class="submit">
+            </form>
+        </header>
+        <main class="main">
+            <div>
+                <div class="celcius" id="temperature">
+                    9</div>
+                <div class="cc"> °C</div>
+                <span class="hey"><img
+                        src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-night.png"
+                        width="100px"></span>
+
+                <div class="space">
+                    <h1 class="cityname" id="cityName"> San Fransisco</h1>
+                    <div class="ya">
+                        <p class="weather-app-details">
+                            <span id="dateTime"> Tuesday 14:49,</span> <span id="describe">scattered clouds</span>
+                            <br />
+                            Humidity: <span id="humidity"><strong> 66%</strong></span>, Wind: <span
+                                id="wind"><strong>3.13km/h</strong></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="vl"></div>
+            <div id="sidebar"></div>
+
+        </main>
+        <br>
+        <footer class="footer">
+            <p>
+                This project was coded by
+                <a href="https://github.com/Eden-MB" target="_blank">Eden Million</a> and is
+                <a href="https://github.com/Eden-MB/weather-app" target="_blank"> on GitHub</a> and
+                <a href="https://edenmb-weatherapp.netlify.app" target="_blank">hosted on Netlify</a>
+
+            </p>
+        </footer>
+    </div>
+    <script src="src/index.js"></script>
+    </script>
+</body>
+
+</html>
